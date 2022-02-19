@@ -2,21 +2,20 @@ class DownloadsCollection():
     
     """DownloadsCollection class
 
-    Contain a list of downloads.
-    Item in list - instance of 'download' class.
+    Contains a list of downloads.
+    The item in the list is an instance of the "Download" class.
 
     """
 
     def __init__(self, downloads=[]):
-        """Get list of downloads, save as collection"""
+        """Get a list of downloads, save as a collection"""
         self.collection = downloads
     
-    def __call__(self):
-        return self.get()
-    
     def get(self):
+        """Return collection"""
         return self.collection
     
     def add(self, download):
+        """Add "Download" at the end of the collection"""
         self.collection.append(download)
         
